@@ -20,5 +20,56 @@ p{
 }
 
 img{
+  width: 40%;
+}
+
+.fact-title{
+  margin: 0 auto;
+}
+
+.videos-holder{
+  margin: 0 auto;
+  margin-bottom: 100px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.video-box{
+  display: flex;
+  flex-direction: column;
+  width: 45%;
+  background-color: white;
+  border-radius: 20px;
+}
+
+.video-tumbnail{
+  width: 40%;
+}
+
+.video-tumbnail img{
+  width: 250%; 
+  border-radius: 20px 20px 0 0;
+}
+
+.text-content{
   width: 100%;
+  padding: 30px;
+}
+
+h4{
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.text-content p{
+  width: 60%;
+}
+.play-now-button-holder{
+  margin-top: 40px;
+}
+
+.play-now-button{
+  background-color: #ffc300;
+  padding: 5px 170px;
+  border-radius: 20px;
 }

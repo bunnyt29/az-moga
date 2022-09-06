@@ -19,21 +19,28 @@
   <header id="main-header">
     <div class="wrapper header-container">
       <div class="nav-container">
-        <div class="logo-container">
-          <h2>JustDiscuss.it</h2>
+        <div class="logo">
+          <img src="images/logo justdiscussit.png" alt="justdiscussit.png">
         </div>
         <nav>
-          <a href="#">Fun facts</a>
-          <a href="#">Games</a>
-          <a href="#">AboutUs</a>
-          <a class="sign-in-button" href="#">Sign In</a>
+          <a href="home.html">Home</a>
+          <a href="videos.html">Fun facts</a>
+          <a href="games.html">Games</a>
+          <a href="#">My frieds</a>
+          <a class="button-sign-up" href="sign-up.html">Sign Up</a>
+          <a class="button-log-in" href="login-form.html">Log In</a>
         </nav>
+        <div class="image-holder">
+          <div>
+            <label for="avatar" class="custom-file-upload-profile">
+              <input class="file-uploder" id="avatar"  onchange="onFileSelected(event)" type="file"/>
+            </label>
+          </div>
+        </div>
       </div>
     </div>
   </header>
   <section id="hero">
-  
-
     <div class="home">
       <div class="container wrapper hero-holder">
         <div class="title">
@@ -43,15 +50,142 @@
             <span>World</span>
           </h1>
           <p>Connect with friend and learn i<br/> language and culture</p>
-          <a class="join-us-button" href="#">Connect</a>
+          <a class="join-us-button" href="sign-up.html">Connect</a>
         </div>
         <div class="image-hero-holder">
           <img src="images/Cartoon tiny people.png" alt="Cartoon-people">
         </div>
       </div>
     </div>
- 
   </section>
+  <section id="features">
+    <div class="container features-holder">
+      <div class="feature">
+        <div class="feature-photo">
+          <img src="images/speaking.png" alt="speaking-icon">
+        </div>
+        <div class="feature-text">
+          <p>Practice your speaking skills</p>
+        </div>
+      </div>
+      <div class="feature">
+        <div class="feature-photo">
+          <img src="images/culture.png" alt="speaking-icon">
+        </div>
+        <div class="feature-text">
+          <p>Practice your speaking skills</p>
+        </div>
+      </div>
+      <div class="feature">
+        <div class="feature-photo">
+          <img src="images/people.png" alt="speaking-icon">
+        </div>
+        <div class="feature-text">
+          <p>Practice your speaking skills</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="steps">
+    <div class="container steps-holder">
+      <div class="steps-title">
+        <h2>It is easy</h2>
+      </div>
+      <div class="steps-information">
+        <div class="step-information">
+          <div class="main-step-text">
+            <p>Register an account</p>
+          </div>
+          <div class="step-icon">
+            <img src="images/personal.png" alt="personal-icon">
+          </div>
+        </div>
+      </div>
+      <div class="steps-information">
+        <div class="step-information">
+          
+          <div class="main-step-text">
+            <p>Register an account</p>
+          </div>
+          <div class="step-icon">
+            <img src="images/motion-sensor.png" alt="personal-icon">
+          </div>
+        </div>
+      </div>
+      <div class="steps-information">
+        <div class="step-information">
+          
+          <div class="main-step-text">
+            <p>Register an account</p>
+          </div>
+          <div class="step-icon">
+            <img src="images/motion-sensor.png" alt="personal-icon">
+          </div>
+        </div>
+      </div>
+      <div class="steps-information">
+        <div class="step-information">
+          
+          <div class="main-step-text">
+            <p>Register an account</p>
+          </div>
+          <div class="step-icon">
+            <img src="images/small-talk.png" alt="personal-icon">
+          </div>
+        </div>
+      </div>
+      <div class="steps-information">
+        <div class="step-information specific">
+          <div class="main-step-text">
+            <p>Register an account</p>
+          </div>
+          <div class="step-icon-logo">
+            <img src="images/logo justdiscussit.png" alt="personal-icon">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="join-us">
+    <div class="container join-us-section">
+      <div class="join-text-holder">
+        <h2>Join us</h2>
+        <p>Knowledge is the most secureinvestment.</p>
+      </div>
+      <div class="join-image-holder">
+        <img src="images/join-us.png" alt="join-us-page">
+      </div>
+      <div class="join-button">
+        <a class="join-us-button blue-button" href="sign-up.html">Join us!</a>
+      </div>
+    </div>
+  </section>
+  <footer>
+    <div class="container-secondary">
+      <div class="footer-logo-holder">
+        <img src="images/logo-white.png" alt="logo">
+      </div>
+      <div class="footer-text-holder">
+        <div class="message">
+          <p><strong>We would be happy to hear you!</strong></p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo nobis a architecto, labore totam natus ipsa dolor, aliquid magnam porro asperiores suscipit! Harum illo ipsum nam fugiat dolorum animi rerum?</p>
+        </div>
+        <div class="contacts">
+          <p><strong>Contacts: </strong></p>
+          <p>Ismena SPA hotel</p>
+          <p>Osvobojdenie Street 1</p>
+          <p>4800 Devin</p>
+          <p>jdi.justdiscussit@gmail.com</p>
+        </div>
+      </div>
+      <div class="social-media">
+        <a href=""><i class="bi bi-globe2"></i></a>
+        <a href=""><i class="bi bi-instagram"></i></a>
+        <a href=""><i class="bi bi-facebook"></i></a>
+        <a href=""><i class="bi bi-envelope-check-fill"></i></a>
+      </div>
+    </div>
+  </footer>
   <!--
   <div class="container" id="attributes-section">
     <div class="wrapper attributes">

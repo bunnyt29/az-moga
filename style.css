@@ -112,6 +112,7 @@ input[type="file"]{
 nav{
   display: flex;
   justify-content: flex-end;
+  align-items: center;
 }
 
 nav a{
@@ -124,7 +125,7 @@ nav a{
 }
 
 nav a:hover{
-  color: black;
+  font-weight: bold;
 }
 
 #hero-section{
@@ -136,7 +137,7 @@ nav a:hover{
 }
 
 #hero-section h1{
-  font-size: 100px;
+  font-size: 60px;
   color: white;
 }
 
@@ -168,6 +169,23 @@ nav a:hover{
 
 #contacts h2{
   font-size: 45px;
+}
+
+.button-sign-up{
+  background-color: #2f0289;
+  color: white;
+  padding: 6px 10px;
+  border-radius: 17px;
+  font-size: 17px;
+}
+
+.button-log-in{
+  background-color: #ffc300;
+  color: white;
+  padding: 6px 10px;
+  border-radius: 17px;
+  font-size: 17px;
+  margin-left: 10px;
 }
 
 .login-title h2{
@@ -281,15 +299,19 @@ nav a:hover{
   padding: 60px;
 }
 
+.title{
+  width: 50%;
+}
+
 .title h1{
   display: flex;
   flex-direction: column;
   width: 33%; 
-  line-height: 85px;
+  line-height: 60px;
 }
 
 .title h1 span{
-  font-size: 100px;
+  font-size: 50px;
 }
 
 .title p{
@@ -299,13 +321,16 @@ nav a:hover{
 
 .join-us-button{
   display: block;
+  justify-content: center;
+  align-items: center;
   width: fit-content;
   margin-top: 40px;
-  color: white;
+  color: rgb(0, 0, 0);
+  font-weight: bold;
   background-color: #FFC300;
-  border-radius: 30px;
-  padding: 10px;
-  font-size: 54px
+  border-radius: 12px;
+  padding: 15px 60px;
+  font-size: 15px
 }
 
 .attributes-section{
@@ -314,12 +339,11 @@ nav a:hover{
 
 .image-hero-holder{
   width: 60%;
-  justify-content: center;
+  justify-content: flex-end;
 }
 
 .image-hero-holder img{
   width:100%;
-  height: auto;
 }
 
 .attributes{
@@ -414,4 +438,172 @@ i{
 
 .profile-description{
   width: 60%;
+}
+
+#features{
+  margin-top: 60px;
+  padding: 50px  0;
+  background-color: #F4C986;
+}
+
+.features-holder{
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+}
+
+.features-holder img{
+  width: 50%;
+  margin: 0 auto;
+}
+
+.feature{
+  width: 25%;
+}
+
+.feature p{
+  font-weight: bold;
+}
+
+.feature-photo{
+  display: flex;
+  justify-content: center;
+}
+
+.feature-text p{
+  display: flex;
+  justify-content: center;
+}
+
+.steps-holder{
+  margin: 60px auto;
+  padding: 60px;
+  background-color: #F7EFE5;
+}
+
+.steps-title{
+  display: flex;
+  justify-content: center;
+}
+
+.steps-title h2{
+  font-size: 60px;
+}
+
+.steps-information{
+  display: flex;
+  justify-content: space-around;
+}
+
+.step-information{
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  gap:100px;
+}
+
+.specific{
+  gap: 40px;
+}
+.main-step-text{
+  width: 80%;
+}
+html{
+  counter-reset: regSteps;
+}
+.main-step-text p::before{
+  counter-increment: regSteps;
+  content: counter(regSteps);
+  margin-right: 20px;
+  font-size: 50px;
+}
+.step-icon{
+  width: 20%;
+}
+
+.step-icon img{
+  width: 60px;
+  height: 60px;
+}
+
+.step-icon-logo img{
+  width: 120px;
+  height: 30px;
+}
+
+.main-step-text{
+  margin: 0;
+}
+
+.join-button{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer{
+  width: 100%;
+  background-color:#2f0289;
+  padding: 40px 0;
+}
+
+.container-secondary{
+  width: 1000px;
+  margin: 0 auto;
+  padding-top: 50px;
+}
+
+.footer-logo-holder img{
+  width: 20%;
+}
+
+.footer-text-holder{
+  display: flex;
+}
+
+.message{
+  padding: 20px;
+  width: 50%;
+  color: white;
+}
+
+.contacts{
+  width: 50%;
+  text-align: right;
+}
+
+.contacts p{
+  margin: 0;
+  color: white;
+}
+
+#join-us{
+  background-color: #F4C986;
+  padding: 50px 0;
+}
+
+.join-us-section{
+  margin: 0 auto;
+}
+
+.join-text-holder{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.join-image-holder{
+  display: flex;
+  justify-content: center;
+  width: 50%;
+  margin: 0 auto;
+}
+
+.join-image-holder img{
+  width: 80%;
+}
+
+.blue-button{
+  background-color: #2F0289;
+  color: white;
 }
