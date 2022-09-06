@@ -1,0 +1,417 @@
+html, body{
+  margin: 0;
+  padding: 0;
+  font-family: 'Quicksand', sans-serif;
+  background-color: #F9DAAB;
+}
+
+a{
+  text-decoration: none;
+}
+
+.container{
+  width: 1024px;
+  border-radius: 28px;
+}
+
+.secondary-container{
+  width: 800px;
+  background-color: #ffffff;
+  border-radius: 28px;
+}
+
+.third-container{
+  width: 1400px;
+}
+
+.information-holder{
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.image-holder{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.image-holder label{
+  background-size: cover;
+
+}
+
+.text-holder{
+  display: flex;
+  flex-direction: column;
+  width: 35%;
+  margin-top: 60px;
+  margin-left: 50px;
+}
+
+.chat-button-holder{
+  width: 15%;
+  padding-top: 60px;
+}
+
+.chat-button-holder a{
+  background-color: #ffc300;
+  padding: 20px 60px;
+  border-radius: 17px;
+  color: black;
+  transition: font-weight 0.2s,box-shadow 0.2s;
+  box-shadow: 0 0 0 rgba(0, 0, 0, 0.436);
+}
+
+.chat-button-holder a:hover{
+  font-weight: bold;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.436);
+}
+
+.custom-file-upload{
+  background-color: grey;
+  width: 290px;
+  height: 290px;
+  margin-top: 30px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.custom-file-upload-profile{
+  background-color: grey;
+  width: 60px;
+  height: 60px;
+  margin-top: 30px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+input[type="file"]{
+  display: none;
+}
+
+.wrapper{
+  width: 80%;
+  margin: 0 auto;
+}
+
+.progress-bar{
+  align-self: center;
+}
+
+.nav-container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav{
+  display: flex;
+  justify-content: flex-end;
+}
+
+nav a{
+  color: rgba(109, 109, 109, 0.966);
+  font-size: 16px;
+  margin-left: 40px;
+  transition: ease-in 1ms;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+nav a:hover{
+  color: black;
+}
+
+#hero-section{
+  width: 100%;
+  height: 520px;
+  background-image: url(./images/hero-image.jpg);
+  background-size: 100%;
+
+}
+
+#hero-section h1{
+  font-size: 100px;
+  color: white;
+}
+
+
+
+#statistics{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+
+.analize-box{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30%;
+  height: 120px;
+  border-radius: 10px;
+  box-shadow: 3px 10px 10px 10px rgba(0, 0, 0, 0.139);
+}
+
+.analize-box h2{
+  font-size: 45px;
+}
+
+#contacts{
+  margin-top: 60px;
+}
+
+#contacts h2{
+  font-size: 45px;
+}
+
+.login-title h2{
+  display: flex;
+  justify-content: center;
+  margin-top: 80px;
+  text-transform: uppercase;
+  font-size: 70px;
+}
+
+.login-form{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 500px;
+  height: 500px;
+  background-color: rgb(228, 132, 132);
+}
+
+#login-error-msg-holder {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+}
+
+#login-error-msg {
+  width: 23%;
+  text-align: center;
+  margin: 0;
+  padding: 5px;
+  font-size: 12px;
+  font-weight: bold;
+  color: #8a0000;
+  border: 1px solid #8a0000;
+  background-color: #e58f8f;
+  opacity: 0;
+}
+
+#error-msg-second-line {
+  display: block;
+}
+
+#login-form {
+  align-self: flex-start;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+}
+
+.login-form-field::placeholder {
+  color: #3a3a3a;
+}
+
+.login-form-field {
+  border: none;
+  border-bottom: 1px solid #3a3a3a;
+  margin-bottom: 10px;
+  border-radius: 3px;
+  outline: none;
+  padding: 0px 0px 5px 5px;
+}
+
+#login-form-submit {
+  width: 40%;
+  padding: 7px;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-weight: bold;
+  background-color: #3a3a3a;
+  cursor: pointer;
+  outline: none;
+}
+
+
+/* a new whole nome page */
+
+#main-header{
+  padding: 20px 0;
+}
+
+#hero{
+  width: 100%;
+  padding-top: 20px;
+}
+
+.home{
+  width: 80%;
+  height: auto;
+  margin: 0 auto;
+  background-color: #F7EFE5;
+  border-radius: 40px;
+}
+
+.logo img{
+  width: 50%;
+}
+
+.sign-in-button{
+  color: white;
+  background-color: #0077FF;
+  border-radius: 10px;
+  padding: 10px;
+  font-size: 20px;
+}
+
+.hero-holder{
+  display: flex;
+  padding: 60px;
+}
+
+.title h1{
+  display: flex;
+  flex-direction: column;
+  width: 33%; 
+  line-height: 85px;
+}
+
+.title h1 span{
+  font-size: 100px;
+}
+
+.title p{
+  font-weight: bold;
+  font-size: 22px;
+}
+
+.join-us-button{
+  display: block;
+  width: fit-content;
+  margin-top: 40px;
+  color: white;
+  background-color: #FFC300;
+  border-radius: 30px;
+  padding: 10px;
+  font-size: 54px
+}
+
+.attributes-section{
+  background-color: #2F0289;
+}
+
+.image-hero-holder{
+  width: 60%;
+  justify-content: center;
+}
+
+.image-hero-holder img{
+  width:100%;
+  height: auto;
+}
+
+.attributes{
+  display: flex;
+  justify-content: space-between;
+}
+
+.attribute{
+  width: 28%;
+  background-color: white;
+  border-radius: 30px;
+}
+
+.attribute-image img{
+  width:100%;
+  height: auto;
+}
+
+#attributes-section{
+  background-color: #2F0289;
+  padding-top: 50px;
+}
+
+.footer{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.footer h2{
+  font-family: 'Qwitcher Grypen', cursive;
+  font-size: 60px;
+  color: white;
+}
+
+i{
+  color: white;
+  margin-left: 20px;
+}
+
+.profile-title{
+  display: flex;
+  justify-content: center;
+}
+
+.add-button-holder{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.button-submit{
+  font-size: 30px;
+  background-color: #FFC300;
+  padding: 20px;
+  border-radius: 20px;
+  color: white;
+}
+
+.call-button{
+  background-color: greenyellow;
+  color: black;
+  padding: 20px;
+  border-radius: 20px;
+  font-size: 20px;
+}
+
+.chat-button{
+  background-color: rgb(235, 253, 69);
+  color: black;
+  padding: 20px;
+  border-radius: 20px;
+  font-size: 20px;
+}
+
+.profile-box{
+  display: flex;
+  border: 2px solid black;
+}
+
+.profile-picture{
+  width: 30%;
+}
+
+.profile-picture img{
+  margin: 0 auto;
+  width: 80%;
+  height: auto;
+}
+
+.profile-description{
+  width: 60%;
+}

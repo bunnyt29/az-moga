@@ -1,0 +1,82 @@
+a{
+  text-decoration: none;
+  color: black;
+}
+
+.registration{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.login-form{
+  margin-left: 70px;
+  margin-right: 70px;
+  width: 550px;
+  height: 664px;
+  background-color: #f7efe5;
+  border-radius: 16px;
+  box-shadow: -3px -3px 10px rgba(0, 0, 0, 0.221),3px 3px 10px rgba(0, 0, 0, 0.212);
+}
+
+.logo{
+  display: flex;
+  justify-content: center;
+  padding-top: 50.5px;
+}
+
+.logo img{
+  width: 50%;
+}
+
+.input-box{
+  width: 400px;
+  height: 40px;
+  background-color: #f1f1f1;
+  border: solid 1px #707070;
+  border-radius: 13px;
+}
+
+.box-holders{
+  padding-left: 70px;
+}
+
+.box-holders p{
+  margin-bottom: 2px;
+}
+
+h3{
+  text-align: center;
+}
+
+.box{
+  margin-bottom: 0px;
+}
+
+.checkbox{
+  margin-top: 20px;
+  margin-right: 75px;
+  display: flex;
+  justify-content: space-between;
+}
+
+input:checked{
+  accent-color: black;
+}
+
+.loggin-button-holder{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 35px;
+  width: 400px;
+  height: 40px;
+  border: solid 1px #707070;
+  background-color: #ffc300;
+  border-radius: 13px;
+}
+
+.loggin-button-holder a{
+  cursor: pointer;
+}

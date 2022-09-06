@@ -1,0 +1,18 @@
+#world-map{
+  height: 50vh;
+}
+
+.CountrySearch-wrapper{
+  display: flex;
+  gap:1em;
+  margin-top: 1em;
+}
+
+.CountrySearch-wrapper input{
+  width: 100%;
+}
+
+.CountrySearch-wrapper  label{
+  display: flex;
+  gap:5px
+}
