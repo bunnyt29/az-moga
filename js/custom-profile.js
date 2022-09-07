@@ -14,12 +14,12 @@ fetch(GetUrlRoot() + 'user/' + getSearchParameters()['id']).then(res => res.json
     document.querySelector('#language'),
     document.querySelector('#time'),
     document.querySelector('#dedc')].map(el=>el.setAttribute('disabled',''))
-    document.querySelector('#age').setAttribute('value',r.age) 
-    document.querySelector('#Country').setAttribute('value', r.country) 
-    document.querySelector('#language').setAttribute('value',r.language)  
-    document.querySelector('#time').setAttribute('value', r.time) 
-    document.querySelector('#dedc').setAttribute('value',r.description)  
-    document.querySelector('#usename').setAttribute('value',r.username)  
+    document.querySelector('#age').setAttribute('value',r.age||'') 
+    document.querySelector('#Country').setAttribute('value', r.country||'') 
+    document.querySelector('#language').setAttribute('value',r.language||'')  
+    document.querySelector('#time').setAttribute('value', r.time ||'') 
+    document.querySelector('#dedc').setAttribute('value',r.description||'')  
+    document.querySelector('#usename').setAttribute('value',r.username||'')  
 
     console.log([document.querySelector('#age'),
     document.querySelector('#Country'),

@@ -17,7 +17,7 @@ function Register(e){
         console.log(res);
         SetUser(res.user)
         SetToken(res.access)
-        window.location = '/find-friends.html';
+        window.location = '/profile-creator.html';
         
     }).catch(_=>{
         alert('There is error in your data')

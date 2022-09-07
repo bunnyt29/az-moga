@@ -68,7 +68,7 @@ fetch(GetUrlRoot() + 'user/').then(res => res.json()).then(res => {
     </div>
     <div class="country">${user.country || 'Bulgaria'}
     </div>
-    <a href="./custom-profile.html?id=${user.id}" class="visit-button"></a>
+    <a href="./cst-prof.html?id=${user.id}" class="visit-button"></a>
 </div>`
   }).join('')
 })
