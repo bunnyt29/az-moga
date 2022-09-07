@@ -22,19 +22,36 @@
         <div class="logo">
           <img src="images/logo justdiscussit.png" alt="justdiscussit.png">
         </div>
-        <nav>
+        <nav class="desktop-nav">
           <a href="home.html">Home</a>
           <a href="videos.html">Fun facts</a>
           <a href="games.html">Games</a>
-          <a href="#">My frieds</a>
+          <a href="#">My friedns</a>
           <a class="button-sign-up" href="sign-up.html">Sign Up</a>
           <a class="button-log-in" href="login-form.html">Log In</a>
         </nav>
-        <div class="image-holder">
-          <div>
-            <label for="avatar" class="custom-file-upload-profile">
-              <input class="file-uploder" id="avatar"  onchange="onFileSelected(event)" type="file"/>
-            </label>
+        <nav class="mobile-nav"> 
+          <i class="bi bi-list hammenu" onclick="(() => document.querySelector('.opened-hamburger-menu').classList.toggle('opened'))()"></i>
+        </nav>
+        <div class="opened-hamburger-menu">
+          <div class="image-holder">
+            <div>
+              <label for="avatar" class="custom-file-upload-profile">
+                <input class="file-uploder" id="avatar"  onchange="onFileSelected(event)" type="file"/>
+              </label>
+            </div>
+          </div>
+          <div class="link">
+            <a href="#">Home</a>
+          </div>
+          <div class="link">
+            <a href="#">Fun facts</a>
+          </div>
+          <div class="link">
+            <a href="#">Gaems</a>
+          </div>
+          <div class="link">
+            <a href="#">My friends</a>
           </div>
         </div>
       </div>
@@ -49,7 +66,7 @@
             <span>The</span>
             <span>World</span>
           </h1>
-          <p>Connect with friend and learn i<br/> language and culture</p>
+          <p>Connect with friend and learn i language and culture</p>
           <a class="join-us-button" href="sign-up.html">Connect</a>
         </div>
         <div class="image-hero-holder">

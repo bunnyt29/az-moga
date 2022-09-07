@@ -13,40 +13,307 @@
         integrity="sha512-BB3hKbKWOc9Ez/TAwyWxNXeoV9c1v6FIeYiBieIWkpLjauysF18NzgR1MBNBXf8/KABdlkX68nAhlwcDFLGPCQ=="
         crossorigin=""></script>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="find-friends.css">
+    <link rel="stylesheet" href="findFriends.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
 </head>
 
 <body>
-    <div id="world-map"></div>
-    <div class="CountrySearch-wrapper">
-        <label for="CountrySearch" class="flex">
-          <span>Search</span>  
-            <span class="bi bi-search"></span>
-        </label>
-        <input type="text" list="countries" placeholder="Country Name..." id="CountrySearch" onchange="CountryNameChange(event)">
-    </div>
+    <header id="main-header">
+        <div class="wrapper header-container">
+            <div class="nav-container">
+                <div class="logo">
+                    <img src="images/logo justdiscussit.png" alt="justdiscussit.png">
+                </div>
+                <nav>
+                    <a href="#">Home</a>
+                    <a href="#">Fun facts</a>
+                    <a href="#">Games</a>
+                    <a href="#">AboutUs</a>
+                    <a href="#">My frieds</a>
+                </nav>
+                <div class="image-holder">
+                    <div>
+                        <label for="avatar" class="custom-file-upload-profile">
+                            <input class="file-uploder" id="avatar" onchange="onFileSelected(event)" type="file" />
+                        </label>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="search-modal">
+        <div class="name-search-wrapper">
+            <input type="text" list="countries" placeholder="Search" id="name-search"
+                onchange="CountryNameChange(event)">
+            <label for="name-search" class="bg-white"> <span class="bi bi-search"></span></label>
+        </div>
+        <h3>Filter</h3>
+        <div class="filters-wrapper">
+            <div class="dropdown" data-title="Age">
+                <div class="row" onclick=" event.stopPropagation()">
+                    <label>From</label>
+                    <input type="number">
+                    <label for="">To</label>
+                    <input type="number">
+                </div>
+            </div>
+            <div class="dropdown" data-title="Hobbies">
+                <div class="row" onclick=" event.stopPropagation()">
+                    Some things
 
-    <div class="container wrapper profile-box">
-      <div class="profile-picture">
-        <img src="images/icon fact.png" alt="icon">
-      </div>
-      <div class="profile-description">
-        <h2>Your Name</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui odit laborum omnis maxime nam maiores autem hic ut possimus iusto deserunt amet perferendis tenetur, tempora dolores accusamus harum distinctio voluptatibus.</p>
-      </div>
+                </div>
+            </div>
+            <div class="dropdown" data-title="Country">
+                <div class="row" onclick="event.stopPropagation()">
+                    <input type="text" list="countries" style="width: 50%;">
+                    <datalist id="countries">
+
+                    </datalist>
+                </div>
+            </div>
+            <div class="dropdown" data-title="Language">
+                <div class="row" onclick="event.stopPropagation()">
+                    <input type="text" list="languages" style="width: 50%;">
+                    <datalist id="languages">
+                        <option value="Bulgarian">
+                        <option value="Spanish">
+                        <option value="English">
+                        <option value="Hindi (Sanskritised Hindustani)">
+                        <option value="Bengali">
+                        <option value="Portuguese">
+                        <option value="Russian">
+                        <option value="Japanese">
+                        <option value="Western Punjabi">
+                        <option value="Yue Chinese">
+                        <option value="Vietnamese">
+                        <option value="Marathi">
+                        <option value="Telugu">
+                        <option value="Turkish">
+                        <option value="Wu Chinese">
+                        <option value="Korean">
+                        <option value="French">
+                        <option value="German (only Standard German)">
+                        <option value="Tamil">
+                        <option value="Urdu (Persianised Hindustani)">
+                        <option value="Javanese">
+                        <option value="Italian">
+                        <option value="Egyptian Arabic">
+                        <option value="Gujarati">
+                        <option value="Iranian Persian">
+                        <option value="Bhojpuri">
+                        <option value="Southern Min">
+                        <option value="Hakka">
+                        <option value="Jin Chinese">
+                        <option value="Hausa">
+                        <option value="Kannada">
+                        <option value="Indonesian">
+                        <option value="Yoruba">
+                        <option value="Polish">
+                        <option value="Xiang Chinese">
+                        <option value="Malayalam">
+                        <option value="Odia">
+                        <option value="Maithili">
+                        <option value="Sudanese Arabic">
+                        <option value="Burmese">
+                        <option value="Eastern Punjabi[12]">
+                        <option value="Sunda">
+                        <option value="Algerian Arabic">
+                        <option value="Moroccan Arabic">
+                        <option value="Ukrainian">
+                        <option value="Igbo">
+                        <option value="Northern Uzbek">
+                        <option value="Sindhi">
+                        <option value="North Levantine Arabic">
+                        <option value="Romanian">
+                        <option value="Tagalog">
+                        <option value="Dutch">
+                        <option value="Saʽidi Arabic">
+                        <option value="Gan Chinese">
+                        <option value="Amharic">
+                        <option value="Northern Pashto">
+                        <option value="Magahi">
+                        <option value="Thai">
+                        <option value="Saraiki">
+                        <option value="Khmer">
+                        <option value="Chhattisgarhi">
+                        <option value="Somali">
+                        <option value="Malaysian (Malaysian Malay)">
+                        <option value="Cebuano">
+                        <option value="Nepali">
+                        <option value="Mesopotamian Arabic">
+                        <option value="Assamese">
+                        <option value="Sinhalese">
+                        <option value="Northern Kurdish">
+                        <option value="Hejazi Arabic">
+                        <option value="Nigerian Fulfulde">
+                        <option value="Bavarian">
+                        <option value="South Azerbaijani">
+                        <option value="Greek">
+                        <option value="Chittagonian">
+                        <option value="Kazakh">
+                        <option value="Deccan">
+                        <option value="Hungarian">
+                        <option value="Kinyarwanda">
+                        <option value="Zulu">
+                        <option value="South Levantine Arabic">
+                        <option value="Tunisian Arabic">
+                        <option value="Sanaani Spoken Arabic">
+                        <option value="Northern Min">
+                        <option value="Southern Pashto">
+                        <option value="Rundi">
+                        <option value="Czech">
+                        <option value="Taʽizzi-Adeni Arabic">
+                        <option value="Uyghur">
+                        <option value="Eastern Min">
+                        <option value="Sylheti">
+                    </datalist>
+                </div>
+            </div>
+        </div>
+
     </div>
-    
-    <datalist id="countries">
-        <option value="Edge">
-        <option value="Firefox">
-        <option value="Chrome">
-        <option value="Opera">
-        <option value="Safari">
-      </datalist>
+    <div id="world-map">
+
+    </div>
+    <div id="results-grid">
+        <div class="user-card">
+            <div class="avatar-wrapper">
+                <svg viewBox="0 0 140 140">
+                    <circle id="border-track" cx="70" cy="70" r="65"></circle>
+                    <circle id="track" cx="70" cy="70" r="65"></circle>
+                    <circle style="--level:220" id="progress" cx="70" cy="70" r="66"></circle>
+                    <circle style="--level:220" id="progress-border" cx="70" cy="70" r="66"></circle>
+                </svg>
+                <img
+                    src="https://images.squarespace-cdn.com/content/v1/5ceafa407824f80001793b84/1602883186071-KM5277WCL1BFW8AD4JUH/some-any.jpg?format=1000w">
+            </div>
+            <h3 class="username">Name</h3>
+            <span class="lvl-wrapper">Lvl: <span>15</span></span>
+            <div class="main-info">
+                <span>Natasha Z</span>
+                <span>20 y.o</span>
+                <span>Time</span>
+                <span>12.22-13.22</span>
+            </div>
+            <div class="hobbies-wrapper">
+                <span>Hobbies</span>
+                <div class="hobbies-box"></div>
+            </div>
+            <div class="country">Bulgaria
+            </div>
+            <button class="visit-button"></button>
+        </div>
+        <div class="user-card">
+            <div class="avatar-wrapper">
+                <svg viewBox="0 0 140 140">
+                    <circle id="border-track" cx="70" cy="70" r="65"></circle>
+                    <circle id="track" cx="70" cy="70" r="65"></circle>
+                    <circle style="--level:100" id="progress" cx="70" cy="70" r="66"></circle>
+                    <circle style="--level:100" id="progress-border" cx="70" cy="70" r="66"></circle>
+                </svg>
+                <img
+                    src="https://images.squarespace-cdn.com/content/v1/5ceafa407824f80001793b84/1602883186071-KM5277WCL1BFW8AD4JUH/some-any.jpg?format=1000w">
+            </div>
+            <h3 class="username">Name</h3>
+            <span class="lvl-wrapper">Lvl: <span>15</span></span>
+            <div class="main-info">
+                <span>Natasha Z</span>
+                <span>20 y.o</span>
+                <span>Time</span>
+                <span>12.22-13.22</span>
+            </div>
+            <div class="hobbies-wrapper">
+                <span>Hobbies</span>
+                <div class="hobbies-box"></div>
+            </div>
+            <div class="country">Bulgaria
+            </div>
+            <button class="visit-button"></button>
+        </div>
+        <div class="user-card">
+            <div class="avatar-wrapper">
+                <svg viewBox="0 0 140 140">
+                    <circle id="border-track" cx="70" cy="70" r="65"></circle>
+                    <circle id="track" cx="70" cy="70" r="65"></circle>
+                    <circle style="--level:158" id="progress" cx="70" cy="70" r="66"></circle>
+                    <circle style="--level:158" id="progress-border" cx="70" cy="70" r="66"></circle>
+                </svg>
+                <img
+                    src="https://images.squarespace-cdn.com/content/v1/5ceafa407824f80001793b84/1602883186071-KM5277WCL1BFW8AD4JUH/some-any.jpg?format=1000w">
+            </div>
+            <h3 class="username">Name</h3>
+            <span class="lvl-wrapper">Lvl: <span>15</span></span>
+            <div class="main-info">
+                <span>Natasha Z</span>
+                <span>20 y.o</span>
+                <span>Time</span>
+                <span>12.22-13.22</span>
+            </div>
+            <div class="hobbies-wrapper">
+                <span>Hobbies</span>
+                <div class="hobbies-box"></div>
+            </div>
+            <div class="country">Bulgaria
+            </div>
+            <button class="visit-button"></button>
+        </div>
+        <div class="user-card">
+            <div class="avatar-wrapper">
+                <svg viewBox="0 0 140 140">
+                    <circle id="border-track" cx="70" cy="70" r="65"></circle>
+                    <circle id="track" cx="70" cy="70" r="65"></circle>
+                    <circle style="--level:439" id="progress" cx="70" cy="70" r="66"></circle>
+                    <circle style="--level:439" id="progress-border" cx="70" cy="70" r="66"></circle>
+                </svg>
+                <img
+                    src="images/Cartoon tiny people.png">
+            </div>
+            <h3 class="username">Name</h3>
+            <span class="lvl-wrapper">Lvl: <span>15</span></span>
+            <div class="main-info">
+                <span>Natasha Z</span>
+                <span>20 y.o</span>
+                <span>Time</span>
+                <span>12.22-13.22</span>
+            </div>
+            <div class="hobbies-wrapper">
+                <span>Hobbies</span>
+                <div class="hobbies-box"></div>
+            </div>
+            <div class="country">Bulgaria
+            </div>
+            <button class="visit-button"></button>
+        </div>
+    </div>
+    <footer>
+      <div class="container-secondary">
+        <div class="footer-logo-holder">
+          <img src="images/logo-white.png" alt="logo">
+        </div>
+        <div class="footer-text-holder">
+          <div class="message">
+            <p><strong>We would be happy to hear you!</strong></p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo nobis a architecto, labore totam natus ipsa dolor, aliquid magnam porro asperiores suscipit! Harum illo ipsum nam fugiat dolorum animi rerum?</p>
+          </div>
+          <div class="contacts">
+            <p><strong>Contacts: </strong></p>
+            <p>Ismena SPA hotel</p>
+            <p>Osvobojdenie Street 1</p>
+            <p>4800 Devin</p>
+            <p>jdi.justdiscussit@gmail.com</p>
+          </div>
+        </div>
+        <div class="social-media">
+          <a href=""><i class="bi bi-globe2"></i></a>
+          <a href=""><i class="bi bi-instagram"></i></a>
+          <a href=""><i class="bi bi-facebook"></i></a>
+          <a href=""><i class="bi bi-envelope-check-fill"></i></a>
+        </div>
+      </div>
+    </footer>
+
+
+
     <script src="find-friends.js"></script>
-
-   
 </body>
-
 </html>

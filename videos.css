@@ -73,3 +73,52 @@ h4{
   padding: 5px 170px;
   border-radius: 20px;
 }
+
+iframe{
+  width: 800px;
+  height: 500px;
+}
+
+@media only screen and (max-width: 600px){
+  iframe{
+    width: 100%;
+  }
+
+  .fact{
+    width: 80%;
+    padding: 60px 0;
+  }
+
+  .play-now-button{
+    padding: 0;
+  }
+
+  .text-content{
+    width: 80%;
+    margin: 0 auto;
+    padding: 0;
+  }
+
+  .videos-holder{
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .video-box{
+    width: 80%;
+    margin: 0 auto;
+  }
+
+
+  .play-now-button{
+    padding: 20px;
+  }
+
+  .fact-title{
+    text-align: center;
+  }
+
+  .text-content p{
+    width: 100%;
+  }
+}

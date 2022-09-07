@@ -83,7 +83,7 @@ a{
   background-color: grey;
   width: 60px;
   height: 60px;
-  margin-top: 30px;
+  margin-top: 10px;
   border-radius: 50%;
   display: flex;
   justify-content: center;
@@ -113,6 +113,14 @@ nav{
   display: flex;
   justify-content: flex-end;
   align-items: center;
+}
+
+nav span{
+  display: flex;
+  flex-direction: column;
+  width: 50px;
+  height: 20px;
+  background-color: black;
 }
 
 nav a{
@@ -264,6 +272,14 @@ nav a:hover{
 
 
 /* a new whole nome page */
+
+.desktop-nav { display: flex;}
+.mobile-nav {display: none;}
+
+.opened-hamburger-menu{
+  display: none;
+}
+
 
 #main-header{
   padding: 20px 0;
@@ -607,3 +623,132 @@ footer{
   background-color: #2F0289;
   color: white;
 }
+
+.opened-hamburger-menu.opened{
+  display: initial;
+  padding: 10px 10px;
+  flex-direction: column;
+  width: 500px;
+  height: fit-content;
+  background-color: #2F0289;
+}
+
+.link{
+  padding: 20px 10px;
+}
+
+.link a{
+  color: white;
+}
+
+.hammenu{
+  color: black;
+  transform: scale(5);
+}
+
+@media only screen and (max-width: 600px){
+
+  .title{
+    width: 100%;
+  }
+
+  .image-hero-holder{
+    display: none;
+  }
+
+  .hero-holder{
+    padding: 60px 30px;
+  }
+
+  .container{
+    width: auto;
+  }
+
+  .features-holder{
+    flex-direction: column;
+  }
+
+  .feature{
+    width: 100%;
+  }
+
+  .features-holder img{
+    width: 100px;
+  }
+
+  nav{
+    display: none;
+  } 
+
+  .steps-information{
+    width: 100%;
+  }
+
+  .step-information{
+    flex-direction: column;
+    width: 100%;
+    gap: 0;
+  }
+
+  .main-step-text{
+    order: 1;
+  }
+
+  .main-step-text p{
+    text-align: center;
+  }
+
+  .main-step-text p::before{
+    content: "";
+    margin-right: 0;
+    font-size: 0;
+  }
+/* 
+  .steps-information{
+    margin-bottom: 20px;
+  } */
+
+  .steps-information:not(:last-child) {
+    margin-bottom: 20px;
+  }
+
+  .join-text-holder h2{
+    margin: 0;
+  }
+
+  .join-text-holder p{
+    width: 50%;
+    text-align: center;
+  }
+
+  .footer-text-holder{
+    flex-direction: column;
+    margin-bottom: 30px;
+  }
+
+  .contacts{
+    text-align: left;
+    margin-left: 20px;
+  }
+
+  .footer-logo-holder{
+    margin-left: 20px;
+  }
+
+  .container-secondary{
+    width: auto;
+  }
+
+  .footer-logo-holder img{
+    width: 50%;
+  }
+
+  .footer-text-holder .message{
+    width: auto;
+  }
+
+  .desktop-nav {display: none;}
+  .mobile-nav { display: block;}
+
+
+}  

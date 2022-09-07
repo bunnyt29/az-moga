@@ -80,3 +80,21 @@ input:checked{
 .loggin-button-holder a{
   cursor: pointer;
 }
+
+@media only screen and (max-width: 600px){
+
+  .box-holders{
+    padding-left: 40px;
+  }
+  .input-box{
+    width: 90%;
+  }
+
+  .loggin-button-holder{
+    width: 90%;
+  }
+
+  .checkbox{
+    margin-right: 30px;
+  }
+}

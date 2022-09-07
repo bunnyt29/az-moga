@@ -1,5 +1,4 @@
 .container{
-  width: 1024px;
   border-radius: 28px;
 }
 
@@ -13,8 +12,13 @@
   width: 1400px;
 }
 
+.image-holder img{
+  width: 300px;
+  height: 300px;
+}
+
 .text-holder input{
-  display: nones;
+  display: none;
 }
 
 .text-holder p{
@@ -80,4 +84,19 @@
 .hobbies-title{
   width: 800px;
   margin: 30px auto;
+}
+
+@media only screen and (max-width: 600px){ 
+
+  .information-holder{
+    flex-direction: column;
+  }
+
+  .image-holder{
+    align-items: flex-start;
+  }
+
+  .secondary-container{
+    width: auto;
+  }
 }

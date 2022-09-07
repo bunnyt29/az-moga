@@ -1,3 +1,6 @@
+body{
+  margin: 0;
+}
 .game-title{
   width: 40%;
   display: flex;
@@ -20,4 +23,15 @@
 
 .game-box{
   margin-bottom: 50px;
+}
+
+@media only screen and (max-width: 600px){ 
+  .games{
+    padding: 50px;
+  }
+
+  .game-title{
+    width: 100%;
+  }
+
 }
