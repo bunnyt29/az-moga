@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="./style.css">
+    
+    <link rel="stylesheet" href="./chat.css">
+</head>
+
+<body>
+    <header id="main-header">
+        <div class="wrapper header-container">
+          <div class="nav-container">
+            <div class="logo">
+              <img src="images/logo justdiscussit.png" alt="justdiscussit.png">
+            </div>
+            <nav>
+              <a href="#">Fun facts</a>
+              <a href="#">Games</a>
+              <a href="#">AboutUs</a>
+              <a href="#">My frieds</a>
+            </nav>
+            <div class="image-holder">
+              <div>
+                <label for="avatar" class="custom-file-upload-profile">
+                <!-- <input class="file-uploder" id="avatar"  onchange="onFileSelected(event)" type="file"/> -->
+                </label>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+    <div class="all-wrapper">
+        <div class="friends-wrapper">
+            <div class="friend-wrapper"><img
+                    src="https://i.pinimg.com/originals/06/4b/d3/064bd3965305214543b15be749ad63b8.png" alt=""></div>
+            <div class="friend-wrapper"><img
+                    src="https://i.pinimg.com/originals/06/4b/d3/064bd3965305214543b15be749ad63b8.png" alt=""></div>
+
+            <div class="friend-wrapper"><img
+                    src="https://i.pinimg.com/originals/06/4b/d3/064bd3965305214543b15be749ad63b8.png" alt=""></div>
+        </div>
+        <div class="chat">
+            <div class="chat-messages">
+                <div class="message">NOT my message</div>
+                <div class="message my">MY message</div>
+
+            </div>
+            <div class="chat-controls">
+                <textarea  rows="1" id='chat-input' class="message-input"></textarea> 
+                <button id="send-message-button">
+                    <i class="bi bi-send"></i>
+                </button>
+            </div>
+
+        </div>
+        <div id="chat-frame"></div>
+    </div>
+
+    <div id="chat-frame"></div>
+    <script src='https://meet.jit.si/external_api.js'></script>
+    <script src="./js/shared.js"></script>
+    
+    <script src="./chat.js"></script>
+</body>
+
+</html>

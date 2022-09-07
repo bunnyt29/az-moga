@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,6 +12,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
   <title>Registration</title>
 </head>
+
 <body>
   <section class="registration">
     <div class="login-form">
@@ -20,9 +22,9 @@
       <h3>Log In</h3>
       <div class="box-holders">
         <p>E-mail</p>
-        <input class="input-box" type="text">
+        <input id="email" class="input-box" type="text">
         <p>Password</p>
-        <input class="input-box" type="text">
+        <input id="password" class="input-box" type="password">
         <div class="checkbox">
           <div>
             <input type="checkbox" id="remember">
@@ -30,14 +32,14 @@
           </div>
           <a href="#">Forgot password</a>
         </div>
-        <div class="loggin-button-holder">
+        <div class="loggin-button-holder" onclick="Login(event)">
           <a href="#">LogIn</a>
         </div>
       </div>
-      
+
     </div>
   </section>
-<!---
+  <!---
   <section class="login">
     <div class="login-title">
       <h2>Registration</h2>
@@ -57,6 +59,9 @@
       </div>
     </div>
   </section>
-  
+  -->
+  <script src="./js/shared.js"></script>
+  <script src="./js/login.js"></script>
 </body>
+
 </html>
