@@ -13,7 +13,7 @@
 }
 
 .image-holder img{
-  width: 300px;
+  width: 100%;
   height: 300px;
 }
 
@@ -81,6 +81,11 @@
   border: 1px solid rgba(0, 0, 0, 0.411);
 }
 
+.create input{
+  display: block !important;
+}
+
+
 .hobbies-title{
   width: 800px;
   margin: 30px auto;
@@ -98,6 +103,26 @@
 
   .secondary-container{
     width: auto;
+  }
+
+  .hobbies-box-holder{
+    grid-template-columns: none;
+    padding: 0;
+  }
+
+  .chat-button-holder a{
+    margin-left: 60px;
+  }
+  .progress-bar{
+    text-align: center;
+  }
+
+  .hobbies-title{
+    width: 100%;
+  }
+
+  .image-holder label{
+    margin-left: 80px;
   }
 }
 

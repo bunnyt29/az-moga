@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Qwitcher+Grypen:wght@700&family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="profile.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+  <title>Friends profile</title>
+</head>
+<body>
+  <header id="main-header">
+    <div class="wrapper header-container">
+      <div class="nav-container">
+        <div class="logo">
+          <img src="images/logo justdiscussit.png" alt="justdiscussit.png">
+        </div>
+        <nav class="desktop-nav">
+          <a href="index2.html">Home</a>
+          <a href="videos.html">Fun facts</a>
+          <a href="games.html">Games</a>
+          <a href="find-friends.html">My friedns</a>
+          <a class="button-sign-up" href="sign-up.html">Sign Up</a>
+          <a class="button-log-in" href="login-form.html">Log In</a>
+        </nav>
+        <nav class="mobile-nav"> 
+          <i class="bi bi-list hammenu" onclick="(() => document.querySelector('.opened-hamburger-menu').classList.toggle('opened'))()"></i>
+        </nav>
+        <div class="opened-hamburger-menu">
+          <div class="image-holder">
+            <div>
+              <label for="avatar" class="custom-file-upload-profile">
+                <input class="file-uploder" id="avatar"  onchange="onFileSelected(event)" type="file"/>
+              </label>
+            </div>
+          </div>
+          <div class="link">
+            <a href="#">Home</a>
+          </div>
+          <div class="link">
+            <a href="#">Fun facts</a>
+          </div>
+          <div class="link">
+            <a href="#">Gaems</a>
+          </div>
+          <div class="link">
+            <a href="#">My friends</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <section class="information">
+    <div class="container information-holder">
+      <div class="image-holder">
+        <img src="images/Cartoon tiny people.png" alt="person-picture">
+        <div class="progress-bar">
+          <h3>Level 0</h3>
+          <h4>0 XP</h4>
+        </div>
+      </div>
+      <div class="text-holder input-hidden">
+        <div class="wrapper">
+          <p>Username<input type="text" id="usename" min="0"></p>
+         
+        </div>
+        <div class="wrapper">
+          <p>Age<input type="number" id="age" min="0"></p>
+         
+        </div>
+        <div class="wrapper">
+          <p>Country
+            <input type="text" id="Country"></select>
+         
+        </div>
+        <div class="wrapper">
+          <p>Language
+            <input type="text" id="language">
+          
+        </div>
+        <div class="wrapper">
+          <p>Time
+            <input type="text" id="time"/>
+          </p>
+         
+        </div>
+        <div class="wrapper">
+          <p>Description
+            <textarea id="dedc"></textarea>
+          
+        </div>
+      </div>
+      <div class="chat-button-holder">
+        <a onclick="GoToChat(event)">Chat</a>
+      </div>
+    </div>
+  </section>
+  <div class="hobbies-title">
+    <h2>Hobbies</h2>
+  </div>
+  <section class="secondary-container hobbies-section">
+      <div class="hobbies-box-holder">
+       
+      </div>
+  </section>
+  <footer>
+    <div class="container-secondary">
+      <div class="footer-logo-holder">
+        <img src="images/logo-white.png" alt="logo">
+      </div>
+      <div class="footer-text-holder">
+        <div class="message">
+          <p><strong>We would be happy to hear you!</strong></p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo nobis a architecto, labore totam natus ipsa dolor, aliquid magnam porro asperiores suscipit! Harum illo ipsum nam fugiat dolorum animi rerum?</p>
+        </div>
+        <div class="contacts">
+          <p><strong>Contacts: </strong></p>
+          <p>Ismena SPA hotel</p>
+          <p>Osvobojdenie Street 1</p>
+          <p>4800 Devin</p>
+          <p>jdi.justdiscussit@gmail.com</p>
+        </div>
+      </div>
+      <div class="social-media">
+        <a href=""><i class="bi bi-globe2"></i></a>
+        <a href=""><i class="bi bi-instagram"></i></a>
+        <a href=""><i class="bi bi-facebook"></i></a>
+        <a href=""><i class="bi bi-envelope-check-fill"></i></a>
+      </div>
+    </div>
+  </footer>
+
+
+  <script src="./js/shared.js"></script>
+  <script src="./js/custom-profile.js"></script>
+
+  <style>
+    input{
+      display: initial !important;
+    }
+  </style>
+
+</body>
+</html>
