@@ -2,6 +2,7 @@ body{
   margin: 0;
 }
 .game-title{
+  margin-left: 10px;
   width: 40%;
   display: flex;
   flex-direction: column;

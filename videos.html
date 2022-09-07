@@ -8,9 +8,7 @@
   <link rel="stylesheet" href="videos.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Qwitcher+Grypen:wght@700&family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Qwitcher+Grypen:wght@700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
   <title>Videos</title>
@@ -22,19 +20,42 @@
         <div class="logo">
           <img src="images/logo justdiscussit.png" alt="justdiscussit.png">
         </div>
-        <nav>
-          <a href="home.html">Home</a>
+        <nav class="desktop-nav">
+          <a href="index2.html">Home</a>
           <a href="videos.html">Fun facts</a>
           <a href="games.html">Games</a>
-          <a href="#">My friedns</a>
+          <a href="find-friends.html">My friedns</a>
           <a class="button-sign-up" href="sign-up.html">Sign Up</a>
           <a class="button-log-in" href="login-form.html">Log In</a>
         </nav>
-        <div class="image-holder">
-          <div>
-            <img class="custom-file-upload-profile">
-              <input class="file-uploder" id="avatar"  onchange="onFileSelected(event)" type="file"/>
-            </img>
+        <nav class="mobile-nav"> 
+          <i class="bi bi-list hammenu" onclick="(() => document.querySelector('.opened-hamburger-menu').classList.toggle('opened'))()"></i>
+        </nav>
+        <div class="opened-hamburger-menu">
+          <div class="image-holder">
+            <div>
+              <label for="avatar" class="custom-file-upload-profile">
+                <input class="file-uploder" id="avatar"  onchange="onFileSelected(event)" type="file"/>
+              </label>
+            </div>
+          </div>
+          <div class="link">
+            <a href="index2.html">Home</a>
+          </div>
+          <div class="link">
+            <a href="games.html">Fun facts</a>
+          </div>
+          <div class="link">
+            <a href="games.html">Games</a>
+          </div>
+          <div class="link">
+            <a href="find-friends.html">My friends</a>
+          </div>
+          <div class="link">
+            <a href="sign-up.html">Sign Up</a>
+          </div>
+          <div class="link">
+            <a href="login-form.html">Log in</a>
           </div>
         </div>
       </div>
@@ -76,30 +97,6 @@
         </div>
       </div>
     </div>
-    <!-- <div class="video-box">
-      <div class="video-tumbnail">
-        <img src="images/person.jfif" alt="video">
-      </div>
-      <div class="text-content">
-        <h4>Name</h4>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, reiciendis illum. Possimus sequi nihil in, pariatur, ad facilis</p>
-        <div class="play-now-button-holder">
-          <a class="play-now-button" href="#">Play now</a>
-        </div>
-      </div>
-    </div>
-    <div class="video-box">
-      <div class="video-tumbnail">
-        <img src="images/person.jfif" alt="video">
-      </div>
-      <div class="text-content">
-        <h4>Name</h4>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, reiciendis illum. Possimus sequi nihil in, pariatur, ad facilis</p>
-        <div class="play-now-button-holder">
-          <a class="play-now-button" href="#">Play now</a>
-        </div>
-      </div>
-    </div> -->
   </div>
   <footer>
     <div class="container-secondary">
@@ -109,7 +106,7 @@
       <div class="footer-text-holder">
         <div class="message">
           <p><strong>We would be happy to hear you!</strong></p>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo nobis a architecto, labore totam natus ipsa dolor, aliquid magnam porro asperiores suscipit! Harum illo ipsum nam fugiat dolorum animi rerum?</p>
+          <p>Our mission is to helpyou practice the language you are currently learning and give you the chance to explore culture from all over the world.</p>
         </div>
         <div class="contacts">
           <p><strong>Contacts: </strong></p>

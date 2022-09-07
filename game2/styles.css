@@ -1,0 +1,123 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+    /*font-family: Gotham Rounded;*/
+  }
+  
+  :root {
+    --hue-correct: 145;
+    --hue-wrong: 0;
+    --hue-neutral: 200;
+  }
+  
+  body {
+    
+    margin: 0;
+    padding: 0;
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    /*background-color: #F9DAAB;*/
+    background: linear-gradient(180deg, #FFC300 0%, #FDCC43 24.37%, #FBD47E 57.21%, #F9DAAB 100%);
+  }
+  
+  .questiondesign {
+    font-size: 34px;
+    text-align: center;
+    font-family: Century Gothic;
+
+  }
+  .container {
+    position: relative;
+    width: 800px;
+    height: 400px;
+    max-width: 80%;
+    border-radius: 30px;
+    padding: 10px;
+    background-color: #F7EFE5;
+  }
+
+  .container #question-container{
+    margin: auto;
+    position:relative;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  
+  .btn-grid {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 10px;
+    margin: 20px;
+  }
+  
+  .btn {
+    
+    height: 80px;
+    border-radius: 30px;
+    border-color: #FFC300;
+    padding: 5px 10px;
+    background-color: #FFC300;
+    color: white;
+    outline: none;
+    font-size: 34px;
+    font-family: Century Gothic;
+  }
+  .btn-start{
+    top:60%;
+    position: absolute;
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 10px 20px;
+    background-color: #FFC300;
+  }
+  .btn-end{
+    top:75%;
+    position: absolute;
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 10px 20px;
+    background-color: #FFC300;
+  }
+  .title{
+    width: 50%;
+    top: 20%;
+    margin: auto;
+    position: relative;
+    font-size: 64px;
+    font-family: Century Gothic;
+  }
+
+  .btn-next {
+    top:75%;
+    position: absolute;
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 10px 20px;
+    background-color: #FFC300;
+  }
+  
+  .btn.correct {
+    background-color: #a9e6a4;
+    color: #ffffff;
+  }
+  .btn.wrong {
+    background-color: #e6a4a4;
+    color: #ffffff;
+  }
+  
+  .btn:hover {
+    border-color: rgb(255, 255, 255);
+  }
+  
+  .controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+  }
+
+  .hide {
+    display: none;
+  }
